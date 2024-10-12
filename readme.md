@@ -20,19 +20,22 @@ go build -o task-cli
 ```
 You can now use the `task-cli` binary to manage your tasks.
 
+Note: The Task ID is dynamically generated based on the current time, with a precision of seconds.
+
 ## Usage
 ```
 ### Adding a new task
 ./task-cli add "Buy groceries"
-### Output: Task added successfully (ID: 1)
+### Output: Task added successfully (ID: 2024101121521031)
 
 ### Updating and deleting tasks
-./task-cli update 1 "Buy groceries and cook dinner"
-./task-cli delete 1
+./task-cli update 2024101121521031 "Buy groceries and cook dinner"
+./task-cli delete 2024101121521031
 
 ### Marking a task as in progress or done
-./task-cli mark-in-progress 1
-./task-cli mark-done 1
+./task-cli mark-in-progress 2024101121521031
+./task-cli mark-done 2024101121521031
+./task-cli mark-todo 2024101121521031
 
 ### Listing all tasks
 ./task-cli list

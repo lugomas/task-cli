@@ -14,14 +14,14 @@ This tool allows you to create, update, delete, and manage the status of tasks e
 To install task-cli, clone the repository and build the Go binary:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/lugomas/task-cli.git
 cd task-cli
 go build -o task-cli
 ```
 You can now use the `task-cli` binary to manage your tasks.
 
 ## Usage
-
+```
 ### Adding a new task
 task-cli add "Buy groceries"
 ### Output: Task added successfully (ID: 1)
@@ -41,7 +41,7 @@ task-cli list
 task-cli list done
 task-cli list todo
 task-cli list in-progress
-
+```
 
 ## License
 This project is licensed under the MIT License.
